@@ -109,7 +109,7 @@ void RoutePlanner::AStarSearch()
         current_node = this->NextNode();
         open_list.pop_back();
         // std::cout<<current_node->h_value<<"\n";
-        if (current_node->h_value<1e-5)
+        if (current_node == end_node)
         {
             this->m_Model.path = this->ConstructFinalPath(current_node);
             return;

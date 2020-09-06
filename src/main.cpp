@@ -60,11 +60,11 @@ int main(int argc, const char **argv)
     std::cout << "Please specify x coordinate of the start point: ";
     std::cin >> start_x;
     std::cout << "Please specify y coordinate of the start point: ";
-    std::cind>> start_y;
+    std::cin>> start_y;
     std::cout << "Please specify x coordinate of the end point: ";
     std::cin >> end_x;
     std::cout << "Please specify y coordinate of the end point: ";
-    std::cind>> end_y;
+    std::cin>> end_y;
 
     // Build Model.
     RouteModel model{osm_data};
